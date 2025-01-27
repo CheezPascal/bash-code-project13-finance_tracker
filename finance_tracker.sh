@@ -25,7 +25,7 @@ add_expense() {
     read -p "Enter the expense amount: " AMOUNT
     
     # Get the current date in MM,DD,YYYY format
-    CURRENT_DATE=$(date +"%m,%d,%Y")
+    CURRENT_DATE=$(date +"%m/%d/%Y")
     
     # Log the expense to the log file
     echo "$CURRENT_DATE, \$${AMOUNT}, $DESCRIPTION" >> "$EXPENSES_LOG"
